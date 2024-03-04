@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CC0A9BF2B95D3B4002C8C6C /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0CC0A9BE2B95D3B4002C8C6C /* Inceptionv3.mlmodel */; };
+		0CC0A9C22B95D434002C8C6C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0CC0A9C12B95D434002C8C6C /* SnapKit */; };
 		0CF0F51F2B8F54A1004AB7C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF0F51E2B8F54A1004AB7C7 /* AppDelegate.swift */; };
 		0CF0F5212B8F54A1004AB7C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF0F5202B8F54A1004AB7C7 /* SceneDelegate.swift */; };
 		0CF0F5232B8F54A1004AB7C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF0F5222B8F54A1004AB7C7 /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CC0A9BE2B95D3B4002C8C6C /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		0CF0F51B2B8F54A1004AB7C7 /* HotdogDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotdogDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF0F51E2B8F54A1004AB7C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CF0F5202B8F54A1004AB7C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC0A9C22B95D434002C8C6C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				0CF0F5272B8F54A2004AB7C7 /* Assets.xcassets */,
 				0CF0F5292B8F54A2004AB7C7 /* LaunchScreen.storyboard */,
 				0CF0F52C2B8F54A2004AB7C7 /* Info.plist */,
+				0CC0A9BE2B95D3B4002C8C6C /* Inceptionv3.mlmodel */,
 			);
 			path = HotdogDetector;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = HotdogDetector;
+			packageProductDependencies = (
+				0CC0A9C12B95D434002C8C6C /* SnapKit */,
+			);
 			productName = HotdogDetector;
 			productReference = 0CF0F51B2B8F54A1004AB7C7 /* HotdogDetector.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 0CF0F5122B8F54A1004AB7C7;
+			packageReferences = (
+				0CC0A9C02B95D434002C8C6C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 0CF0F51C2B8F54A1004AB7C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CF0F5232B8F54A1004AB7C7 /* ViewController.swift in Sources */,
+				0CC0A9BF2B95D3B4002C8C6C /* Inceptionv3.mlmodel in Sources */,
 				0CF0F51F2B8F54A1004AB7C7 /* AppDelegate.swift in Sources */,
 				0CF0F5212B8F54A1004AB7C7 /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0CC0A9C02B95D434002C8C6C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0CC0A9C12B95D434002C8C6C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CC0A9C02B95D434002C8C6C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0CF0F5132B8F54A1004AB7C7 /* Project object */;
 }
